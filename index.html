@@ -12,9 +12,54 @@
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">        
 
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+
     <title>Spendly - Expense Tracker</title>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/images/logo.svg" alt="">
+                </div>
+                <div class="filter-row">
+                    <select class="filter" name="period" id="period">
+                        <option value="today" disabled selected hidden>Period</option>
+                        <option value="this-week">This Week</option>
+                        <option value="this-month">This Month</option>
+                        <option value="this-year">This Year</option>
+                        <option value="custom">Custom Range</option>
+                    </select>
+
+                    <select class="filter" name="category" id="category">
+                        <option value="all-category" disabled selected hidden>Category</option>
+                        <option value="food">Food</option>
+                        <option value="travel">Travel</option>
+                        <option value="rent">Rent</option>
+                        <option value="misc">Misc</option>
+                    </select>
+
+                    <select class="filter" name="sort" id="sort">
+                        <option value="sort-by" disabled selected hidden>Sort By</option>
+                        <option value="amount-low-high">Amount (Low to high)</option>
+                        <option value="amount-high-low">Amount (High to low)</option>
+                        <option value="date-low-high">Date (Oldest first)</option>
+                        <option value="date-high-low">Date (Newest first)</option>
+                    </select>
+
+                    <h3 class="clear-filters-link">Clear Filters</h3>
+                    <div class="cta">
+                    <button class="add-expense">
+                        <i class="ph ph-plus"></i>
+                        Add Expense
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
