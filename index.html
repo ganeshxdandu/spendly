@@ -34,7 +34,7 @@
                         <option value="custom">Custom Range</option>
                     </select>
 
-                    <select class="filter" name="category" id="category">
+                    <select class="filter" name="category" id="categoryFilter">
                         <option value="all-category" disabled selected hidden>Category</option>
                         <option value="food">Food</option>
                         <option value="travel">Travel</option>
@@ -52,11 +52,11 @@
 
                     <h3 class="clear-filters-link">Clear Filters</h3>
                     <div class="cta">
-                    <button class="add-expense">
-                        <i class="ph ph-plus"></i>
-                        Add Expense
-                    </button>
-                </div>
+                        <button class="add-expense">
+                            <i class="ph ph-plus"></i>
+                            Add Expense
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,106 +119,106 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>2024-06-01</td>
-                        <td>Grocery Shopping</td>
-                        <td>Food</td>
-                        <td>₹1,200</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-02</td>
-                        <td>Monthly Rent</td>
-                        <td>Rent</td>
-                        <td>₹8,000</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-03</td>
-                        <td>Coffee with Friends</td>
-                        <td>Misc</td>
-                        <td>₹450</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-04</td>
-                        <td>Flight Tickets</td>
-                        <td>Travel</td>
-                        <td>₹3,200</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-05</td>
-                        <td>Restaurant Dinner</td>
-                        <td>Food</td>
-                        <td>₹1,850</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-06</td>
-                        <td>Movie Night</td>
-                        <td>Misc</td>
-                        <td>₹600</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-07</td>
-                        <td>Public Transport</td>
-                        <td>Travel</td>
-                        <td>₹300</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-08</td>
-                        <td>Utility Bills</td>
-                        <td>Misc</td>
-                        <td>₹1,000</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-09</td>
-                        <td>Lunch Meeting</td>
-                        <td>Food</td>
-                        <td>₹700</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2024-06-10</td>
-                        <td>Taxi Ride</td>
-                        <td>Travel</td>
-                        <td>₹500</td>
-                        <td>
-                            <i class="ph ph-pencil-simple"></i>
-                            <i class="ph ph-trash"></i>
-                        </td>
-                    </tr>
+                        <!-- <tr>
+                            <td>2024-06-01</td>
+                            <td>Grocery Shopping</td>
+                            <td>Food</td>
+                            <td>₹1,200</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-02</td>
+                            <td>Monthly Rent</td>
+                            <td>Rent</td>
+                            <td>₹8,000</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-03</td>
+                            <td>Coffee with Friends</td>
+                            <td>Misc</td>
+                            <td>₹450</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-04</td>
+                            <td>Flight Tickets</td>
+                            <td>Travel</td>
+                            <td>₹3,200</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-05</td>
+                            <td>Restaurant Dinner</td>
+                            <td>Food</td>
+                            <td>₹1,850</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-06</td>
+                            <td>Movie Night</td>
+                            <td>Misc</td>
+                            <td>₹600</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-07</td>
+                            <td>Public Transport</td>
+                            <td>Travel</td>
+                            <td>₹300</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-08</td>
+                            <td>Utility Bills</td>
+                            <td>Misc</td>
+                            <td>₹1,000</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-09</td>
+                            <td>Lunch Meeting</td>
+                            <td>Food</td>
+                            <td>₹700</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024-06-10</td>
+                            <td>Taxi Ride</td>
+                            <td>Travel</td>
+                            <td>₹500</td>
+                            <td>
+                                <i class="ph ph-pencil-simple"></i>
+                                <i class="ph ph-trash"></i>
+                            </td>
+                        </tr> -->
                     </tbody>
                 </table>
                 <div class="pagination">
@@ -237,6 +237,53 @@
                 </div>
             </div>
         </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>&copy; 2025 Spendly. All rights reserved.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="add-expense-form">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2>Add New Expense</h2>
+                <form id="expense-form">
+                    <div class="title-field form-sections">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    
+                    <div class="category-field form-sections">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected hidden>Select Category</option>
+                            <option value="food">Food</option>
+                            <option value="travel">Travel</option>
+                            <option value="rent">Rent</option>
+                            <option value="misc">Misc</option>
+                        </select>
+                    </div>
+                    
+                    <div class="amount-field form-sections">
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" name="amount" required>
+                    </div>
+                    
+                    <div class="date-field form-sections">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-actions form-sections">
+                        <button class="submit-expense">Add Expense</button>
+                        <button type="button" class="cancel-expense">Cancel</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
