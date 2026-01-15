@@ -69,7 +69,7 @@
                         <h5>Total Spent</h5>
                     </div>
                     <div class="value">
-                        <h2>₹12,450</h2>
+                        <h2>₹0</h2>
                         <p>All-time total</p>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                         <h5>Highest Expense</h5>
                     </div>
                     <div class="value">
-                        <h2>₹3,200</h2>
+                        <h2>₹0</h2>
                         <p>Largest single expense</p>
                     </div>
                 </div>
@@ -89,8 +89,8 @@
                         <h5>Top Category</h5>
                     </div>
                     <div class="value">
-                        <h2>₹1,850</h2>
-                        <p>Food has the highest spend</p>
+                        <h2>₹0</h2>
+                        <p><span class="cat">Nothing</span> has the highest spend</p>
                     </div>
                 </div>
                 <div class="card total-expenses">
@@ -99,11 +99,17 @@
                         <h5>Total Expenses</h5>
                     </div>
                     <div class="value">
-                        <h2>120</h2>
+                        <h2>0</h2>
                         <p>Transactions recorded</p>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="empty-state">
+            <i class="ph-fill ph-archive"></i>
+            <h3>No expenses found</h3>
+            <p>Add your first expense to get started!</p>
         </div>
 
         <div class="table">
@@ -224,15 +230,10 @@
                 <div class="pagination">
                     <h5>Showing <span class="start">1</span> to <span class="end">10</span> of <span class="total">50</span> entries</h5>
                     <div class="page-buttons">
-                        <button class="prev-page"><i class="ph ph-caret-left"></i></button>
+                        <!-- <button class="prev-page"><i class="ph ph-caret-left"></i></button> -->
                         <span class="page-numbers">
-                            <button class="page-number">1</button>
-                            <button class="page-number">2</button>
-                            <button class="page-number active">3</button>
-                            <button class="page-number">4</button>
-                            <button class="page-number">5</button>
                         </span>
-                        <button class="next-page"><i class="ph ph-caret-right"></i></button>
+                        <!-- <button class="next-page"><i class="ph ph-caret-right"></i></button> -->
                     </div>
                 </div>
             </div>
@@ -244,11 +245,11 @@
             </div>
         </div>
     </div>
-
+    
+    <div class="overlay"></div>
     <div class="add-expense-form">
-            <div class="overlay"></div>
             <div class="container">
-                <h2>Add New Expense</h2>
+                <h2 class="form-title">Add New Expense</h2>
                 <form id="expense-form">
                     <div class="title-field form-sections">
                         <label for="title">Title:</label>
@@ -275,9 +276,11 @@
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
                     </div>
+
+                    <p class="error-msg">please fill all fields!!!</p>
                     
                     <div class="form-actions form-sections">
-                        <button class="submit-expense">Add Expense</button>
+                        <button type="button" class="submit-expense">Add Expense</button>
                         <button type="button" class="cancel-expense">Cancel</button>
                     </div>
                 </form>
